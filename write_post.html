@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아리 모집 공고 작성</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <?php include 'php/header.php'; ?>
+    <div class="sidebar">
+        <?php include 'php/sidebar.php'; ?>
+    </div>
+    <main>
+        <h1>동아리 모집 공고 작성</h1>
+        <form action="php/upload_post.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="title" placeholder="제목을 입력하세요" required>
+            <textarea name="content" placeholder="내용을 입력하세요" required></textarea>
+            <input type="file" name="images[]" multiple>
+            <button type="submit">업로드</button>
+        </form>
+    </main>
+</body>
+</html>

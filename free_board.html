@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자유 게시판</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <?php include 'php/header.php'; ?>
+    <div class="sidebar">
+        <?php include 'php/sidebar.php'; ?>
+    </div>
+    <main>
+        <h1>자유 게시판</h1>
+        <button id="write-post-btn">글쓰기</button>
+        <div class="post-grid" id="free-board">
+            <!-- 자유 게시판 게시글이 여기에 로드됨 -->
+        </div>
+        <div id="pagination">
+            <!-- 페이지네이션 -->
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
