@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root"; // MySQL 사용자 이름
 $password = "";     // MySQL 비밀번호
-$dbname = "club_db";
+$dbname = "circle";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
